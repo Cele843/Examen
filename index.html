@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>PSD Football Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>PSD Football Club</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#team">Équipe</a></li>
+            <li><a href="#matches">Matchs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Bienvenue au PSD FC</h2>
+    <p>Le club qui domine le terrain ⚽</p>
+    <button onclick="showMessage()">Rejoindre le club</button>
+</section>
+
+<section id="team">
+    <h2>Notre Équipe</h2>
+    <div class="players">
+        <div class="card">
+            <h3>Joueur 1</h3>
+            <p>Attaquant</p>
+        </div>
+        <div class="card">
+            <h3>Joueur 2</h3>
+            <p>Milieu</p>
+        </div>
+        <div class="card">
+            <h3>Joueur 3</h3>
+            <p>Défenseur</p>
+        </div>
+    </div>
+</section>
+
+<section id="matches">
+    <h2>Prochains Matchs</h2>
+    <ul>
+        <li>PSD vs Lions - 12 Avril</li>
+        <li>PSD vs Eagles - 18 Avril</li>
+        <li>PSD vs Warriors - 25 Avril</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <form onsubmit="sendForm(event)">
+        <input type="text" placeholder="Nom" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 PSD Football Club</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
